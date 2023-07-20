@@ -105,18 +105,68 @@ text-align: center;
 /* card section */
 .card{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   text-align: center;
 }
-.play-icon{
-  margin-top: -130px;
+.card-3{
+  position: relative;
 }
-/* play section */
+.image{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle{
+  transition: .2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.card-3:hover .image{
+  opacity: 0.7;
+}
+
+.card-3:hover .middle{
+  opacity: 1;
+  cursor: pointer;
+}
+.text-1{
+  background-color: transparent;
+  color: rgb(250, 247, 247);
+  font-size: 20px;
+  padding: 16px 32px;
+  text-shadow: rgb(201, 47, 8) 2px 2px 2px;
+}
+/* play instantly section */
 .play{
   display: flex;
   justify-content: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  padding-left: 40px;
+}
+.play-image{
+  width: 50%;
+}
+.play-image img{
+  width: 300px;
+  margin-top: 80px;
+  
+
+
+}
+.play-image-2 img{
+  width: 150px;
+  position: relative;
+  bottom: 170px;
+  right: 85px;
 }
 
 /* icon section */
